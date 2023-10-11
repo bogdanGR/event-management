@@ -4,13 +4,13 @@ namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
 use App\Http\Resources\EventResource;
-use App\Http\Traits\CanLoadRelatioShips;
+use App\Http\Traits\CanLoadRelationships;
 use App\Models\Event;
 use Illuminate\Http\Request;
 
 class EventController extends Controller
 {
-    use CanLoadRelatioShips;
+    use CanLoadRelationships;
     private $relations = ['user', 'attendee', 'attendees.user'];
     /**
      * Display a listing of the resource.

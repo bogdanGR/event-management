@@ -4,14 +4,14 @@ namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
 use App\Http\Resources\AttendeeResource;
-use App\Http\Traits\CanLoadRelatioShips;
+use App\Http\Traits\CanLoadRelationships;
 use App\Models\Attendee;
 use App\Models\Event;
 use Illuminate\Http\Request;
 
 class AttendeeController extends Controller
 {
-    use CanLoadRelatioShips;
+    use CanLoadRelationships;
     private array $relations = ['user'];
     /**
      * Display a listing of the resource.
